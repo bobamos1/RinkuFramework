@@ -1,0 +1,86 @@
+﻿using System.Globalization;
+
+namespace Rinku.Tools.Globalization;
+public static class C {
+    public static readonly CultureInfo INV = CultureInfo.InvariantCulture;
+    #region Principal Cultures
+    public static readonly CultureInfo EN = new("en");
+    public static readonly CultureInfo FR = new("fr");
+    public static readonly CultureInfo ES = new("es");
+    public static readonly CultureInfo DE = new("de");
+    public static readonly CultureInfo IT = new("it");
+    public static readonly CultureInfo PT = new("pt");
+    public static readonly CultureInfo RU = new("ru");
+    public static readonly CultureInfo ZH = new("zh");
+    public static readonly CultureInfo JA = new("ja");
+    public static readonly CultureInfo KO = new("ko");
+    public static readonly CultureInfo AR = new("ar");
+    public static readonly CultureInfo NL = new("nl");
+    public static readonly CultureInfo SV = new("sv");
+    public static readonly CultureInfo DA = new("da");
+    public static readonly CultureInfo NO = new("no");
+    public static readonly CultureInfo FI = new("fi");
+    public static readonly CultureInfo TR = new("tr");
+    public static readonly CultureInfo PL = new("pl");
+    public static readonly CultureInfo CS = new("cs");
+    public static readonly CultureInfo HU = new("hu");
+    public static readonly CultureInfo TH = new("th");
+    public static readonly CultureInfo VI = new("vi");
+    public static readonly CultureInfo EL = new("el");
+    public static readonly CultureInfo HI = new("hi");
+    public static readonly CultureInfo BN = new("bn");
+    public static readonly CultureInfo ID = new("id");
+    public static readonly CultureInfo MS = new("ms");
+    public static readonly CultureInfo SR = new("sr");
+    public static readonly CultureInfo RO = new("ro");
+    public static readonly CultureInfo SK = new("sk");
+    public static readonly CultureInfo LT = new("lt");
+    public static readonly CultureInfo LV = new("lv");
+    public static readonly CultureInfo ET = new("et");
+    public static readonly CultureInfo SL = new("sl");
+    public static readonly CultureInfo IS = new("is");
+    public static readonly CultureInfo MT = new("mt");
+    #endregion
+    #region Variants
+    public static readonly CultureInfo EN_US = new("en-US");
+    public static readonly CultureInfo EN_GB = new("en-GB");
+    public static readonly CultureInfo FR_FR = new("fr-FR");
+    public static readonly CultureInfo FR_CA = new("fr-CA");
+    public static readonly CultureInfo ES_ES = new("es-ES");
+    public static readonly CultureInfo ES_MX = new("es-MX");
+    public static readonly CultureInfo DE_DE = new("de-DE");
+    public static readonly CultureInfo IT_IT = new("it-IT");
+    public static readonly CultureInfo PT_BR = new("pt-BR");
+    public static readonly CultureInfo RU_RU = new("ru-RU");
+    public static readonly CultureInfo ZH_CN = new("zh-CN");
+    public static readonly CultureInfo ZH_TW = new("zh-TW");
+    public static readonly CultureInfo JA_JP = new("ja-JP");
+    public static readonly CultureInfo KO_KR = new("ko-KR");
+    public static readonly CultureInfo AR_SA = new("ar-SA");
+    public static readonly CultureInfo NL_NL = new("nl-NL");
+    public static readonly CultureInfo SV_SE = new("sv-SE");
+    public static readonly CultureInfo DA_DK = new("da-DK");
+    public static readonly CultureInfo NO_NO = new("no-NO");
+    public static readonly CultureInfo FI_FI = new("fi-FI");
+    public static readonly CultureInfo TR_TR = new("tr-TR");
+    public static readonly CultureInfo PL_PL = new("pl-PL");
+    public static readonly CultureInfo CS_CZ = new("cs-CZ");
+    public static readonly CultureInfo HU_HU = new("hu-HU");
+    public static readonly CultureInfo TH_TH = new("th-TH");
+    public static readonly CultureInfo VI_VN = new("vi-VN");
+    public static readonly CultureInfo EL_GR = new("el-GR");
+    public static readonly CultureInfo HI_IN = new("hi-IN");
+    public static readonly CultureInfo BN_BD = new("bn-BD");
+    public static readonly CultureInfo ID_ID = new("id-ID");
+    public static readonly CultureInfo MS_MY = new("ms-MY");
+    public static readonly CultureInfo SR_RS = new("sr-RS");
+    public static readonly CultureInfo RO_RO = new("ro-RO");
+    public static readonly CultureInfo SK_SK = new("sk-SK");
+    public static readonly CultureInfo LT_LT = new("lt-LT");
+    public static readonly CultureInfo LV_LV = new("lv-LV");
+    public static readonly CultureInfo ET_EE = new("et-EE");
+    public static readonly CultureInfo SL_SI = new("sl-SI");
+    public static readonly CultureInfo IS_IS = new("is-IS");
+    public static readonly CultureInfo MT_MT = new("mt-MT");
+    #endregion
+}
