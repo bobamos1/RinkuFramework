@@ -3,7 +3,7 @@ using ConditionalQueries;
 using ConditionalQueries.Interfaces;
 using ConditionalQueries.Parsers;
 using ConditionalQueries.QuerySections;
-using DataTable;
+using Data;
 using Rinku.Context;
 
 namespace Rinku.ConditionalSelect;

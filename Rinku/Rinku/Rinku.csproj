@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ConditionalQueries\ConditionalQueries.csproj" />
     <ProjectReference Include="..\DataTable\DataTable.csproj" />
+    <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\HTMLTemplating\HTMLTemplating.csproj" />
     <ProjectReference Include="..\Rinku.Tools\Rinku.Tools.csproj" />
   </ItemGroup>

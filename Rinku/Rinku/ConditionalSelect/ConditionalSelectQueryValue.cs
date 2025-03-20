@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using DataTable;
+using Data;
 using Rinku.Context;
 
 namespace Rinku.ConditionalSelect;
@@ -24,6 +24,15 @@ public class CondColList<T> where T : IContext {
         });
         return this;
     }
+    public CondColList<T> Add<TType>(string name, string sql)
+        => Add(new SingleValCondCol<TType>(name, sql));
+    public CondColList<T> Add<TTypeID, TTypeVal>(string name, string sqlId, string sqlValue)
+        => Add(new RefValCondCol<TTypeID, TTypeVal>(name, sqlId, sqlValue));
+    public CondColList<T> AddNull<TType>(string name, string sql)
+        where TType : struct
+        => Add(new SingleValCondCol<TType?>(name, sql));
+    public CondColList<T> AddNull<TTypeID, TTypeVal>(string name, string sqlId, string sqlValue)
+        => Add(new NullRefValCondCol<TTypeID, TTypeVal>(name, sqlId, sqlValue));
     public CondColList<T> When(IConditionalSelectColumnCondition<T> cond) {
         Columns[_lastIndex] = new() {
             Condition = cond,

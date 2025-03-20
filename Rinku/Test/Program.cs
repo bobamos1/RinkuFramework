@@ -1,17 +1,15 @@
 ﻿using BenchmarkDotNet.Running;
 using ConditionalQueries;
 using ConditionalQueries.Parsers;
-using DataTable;
-using DataTable.Parsers;
-using DataTable.SpecificParsers;
+using Data;
 using Rinku.ConditionalSelect;
 using Rinku.Context;
 using Rinku.Http.ConditionalColumns;
 using Rinku.Http.ConnectionClasses;
 using Test;
-var res = Parser<int?>.Instance;
-var res2 = IParser<WithDataReader, string>.Instance;
-var c = res == res2;
+var res = Retriver.ParsersDict;
+var res2 = 0;//IParser<WithDataReader, string>.Instance;
+//var c = res == res2;
 /*
 var test = new LookupBenchmark();
 test.Setup();

@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using DataTable;
+using Data;
 using Rinku.Context;
 
 namespace Rinku.ConditionalSelect;

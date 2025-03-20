@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using Data.DTMakers;
 using DataTable.DTMakers;
 using Rinku.ConditionalSelect;
 using Rinku.Context;
@@ -14,7 +15,7 @@ public class DynamicTable<T>(string Name, ConditionalSelectQuery<T> Query, Func<
     public async Task<bool> TryHandleEndpoint(T ctx) {
         if (!ctx.Nav.SameSegmentAs(Name))
             return false;
-        var dtMaker = new DataReaderDTMaker();
+        var dtMaker = new DTFromDataReader();
         var res = Query.Parse(ctx, [], dtMaker);
         if (res is null)
             return false;
